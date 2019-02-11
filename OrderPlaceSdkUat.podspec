@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name = "OrderPlaceSdkUat"
-s.version = "0.0.4"
+s.version = "0.0.5"
 s.summary = "Order Place Sdk Uat"
 
 s.description = <<-DESC
@@ -19,7 +19,7 @@ s.ios.deployment_target = "8.0"
 s.swift_version = '4.0'
 s.static_framework = true
 
-s.frameworks = 'AVFoundation', 'WebKit', 'UIKit', 'Foundation'
+s.frameworks = 'AVFoundation', 'WebKit', 'UIKit', 'Foundation', 'PassKit', 'AddressBook'
 
 s.default_subspec = 'Core'
 
@@ -43,5 +43,9 @@ wechat.libraries = 'z', 'c++', 'sqlite3.0'
 wechat.dependency 'OrderPlaceSdkUat/Core'
 end
 
+s.subspec "StripeApple" do |sa|
+sa.ios.vendored_frameworks = 'Classess/frameworks/orderPlaceStripeAppleSDK/Stripe.framework', 'Classess/frameworks/orderPlaceStripeAppleSDK/OrderPlaceStripeAppleSDK.framework'
+sa.dependency 'OrderPlaceSdkUat/Core'
+end
 
 end
