@@ -3,6 +3,10 @@
 If you need to upload to itunnes connection, please integrate [OrderPlaceSdkPrd
 ](https://github.com/AigensTechnology/OrderPlaceSdkPrd)
 
+## config params ref
+
+https://docs.google.com/document/d/1YkTXzsdmWD7Q8BgLVWlekI6nyiS1wcU2Y6T2aHUKiJw/edit?usp=sharing
+
 ## Installation
 
 OrderPlaceSdkUat is available through [CocoaPods](https://cocoapods.org). To install
